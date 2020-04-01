@@ -1,0 +1,603 @@
+{
+  "categories": [
+    {
+      "id": "bytovaya-texnika",
+      "title": "Бытовая техника",
+      "count": 28539,
+      "weight": 1
+    },
+    {
+      "id": "smartfony-planshety-i-fototexnika",
+      "title": "Смартфоны",
+      "count": 8778,
+      "weight": 276
+    },
+    {
+      "id": "tv-i-razvlecheniya",
+      "title": "ТВ и Развлечения",
+      "count": 6298,
+      "weight": 375
+    },
+    {
+      "id": "komplektuyushhie-kompyutery-i-noutbuki",
+      "title": "Компьютеры",
+      "count": 13641,
+      "weight": 483
+    }
+  ],
+  "subcategories": [
+    {
+      "id": "tovary-dlya-kuxni",
+      "title": "Товары для кухни",
+      "count": 17341,
+      "category": "bytovaya-texnika",
+      "weight": 2
+    },
+    {
+      "id": "tovary-dlya-doma",
+      "title": "Товары для дома",
+      "count": 7976,
+      "category": "bytovaya-texnika",
+      "weight": 121
+    },
+    {
+      "id": "krasota-i-zdorove",
+      "title": "Красота и здоровье",
+      "count": 3222,
+      "category": "bytovaya-texnika",
+      "weight": 208
+    },
+    {
+      "id": "smartfony-i-gadzhety",
+      "title": "Смартфоны и гаджеты",
+      "count": 4913,
+      "category": "smartfony-planshety-i-fototexnika",
+      "weight": 277
+    }
+  ],
+  "products": [
+    {
+      "id": "mys-provodnaa-a4tech-bloody-tl70-cernyj",
+      "title": "Мышь проводная A4Tech Bloody TL70 черный",
+      "description": "Мышь проводная A4Tech Bloody TL70 в брутальном черном корпусе оснащена красной подсветкой. Игровое устройство легко справляется со всеми поставленными задачами: для этого оно имеет оптический лазерный датчик Avago A9800, функционирующий в режимах 800, 1000, 1200, 1600, 8200 dpi с частотой опроса 1000 Гц. Работа сенсора регулируется посредством колесика прокрутки на корпусе мыши. Также в ее конструкции предусмотрены 9 кнопок. Мышь проводная A4Tech Bloody TL70 подключается к компьютеру за счет кабеля длиной 1.8 м с USB-интерфейсом. Подходит модель для использования правой рукой.",
+      "brand": "A4Tech",
+      "quantity": 44,
+      "subcategory": "periferiya-i-aksessuary",
+      "status": 1,
+      "characteristics": [
+        {
+          "title": "Общие характеристики",
+          "items": [
+            {
+              "name": "Модель",
+              "value": "A4Tech Bloody TL70",
+              "isExtended": true
+            }
+          ],
+          "isExtended": true
+        },
+        {
+          "title": "Внешний вид",
+          "items": [
+            {
+              "name": "Основной цвет",
+              "value": "черный"
+            },
+            {
+              "name": "Стилизация",
+              "value": "логотип производителя",
+              "isExtended": true
+            },
+            {
+              "name": "Подсветка",
+              "value": "красная"
+            },
+            {
+              "name": "Тканевая оплётка кабеля",
+              "value": "есть",
+              "isExtended": true
+            }
+          ]
+        },
+        {
+          "title": "Управление",
+          "items": [
+            {
+              "name": "Общее количество кнопок",
+              "value": "9"
+            }
+          ]
+        },
+        {
+          "title": "Датчик",
+          "items": [
+            {
+              "name": "Тип сенсора мыши",
+              "value": "оптический лазерный"
+            },
+            {
+              "name": "Модель сенсора мыши",
+              "value": "Avago A9800",
+              "isExtended": true
+            },
+            {
+              "name": "Максимальное разрешение датчика",
+              "value": "8200 dpi"
+            },
+            {
+              "name": "Режимы работы датчика",
+              "value": "1000 dpi, 8200 dpi, 1200 dpi, 800 dpi, 1600 dpi",
+              "isExtended": true
+            },
+            {
+              "name": "Частота опроса",
+              "value": "1000 Гц",
+              "isExtended": true
+            }
+          ]
+        },
+        {
+          "title": "Конструкция",
+          "items": [
+            {
+              "name": "Хват",
+              "value": "для правой руки",
+              "isExtended": true
+            },
+            {
+              "name": "Материал изготовления",
+              "value": "пластик",
+              "isExtended": true
+            },
+            {
+              "name": "Система регулировки веса",
+              "value": "нет",
+              "isExtended": true
+            },
+            {
+              "name": "Бесшумные кнопки",
+              "value": "нет",
+              "isExtended": true
+            }
+          ],
+          "isExtended": true
+        },
+        {
+          "title": "Подключение",
+          "items": [
+            {
+              "name": "Тип подключения",
+              "value": "проводная"
+            },
+            {
+              "name": "Интерфейс подключения",
+              "value": "USB",
+              "isExtended": true
+            },
+            {
+              "name": "Длина кабеля",
+              "value": "1.8 м",
+              "isExtended": true
+            },
+            {
+              "name": "Катушка для кабеля",
+              "value": "нет",
+              "isExtended": true
+            }
+          ]
+        },
+        {
+          "title": "Питание",
+          "items": [
+            {
+              "name": "Тип источника питания",
+              "value": "по шине",
+              "isExtended": true
+            }
+          ],
+          "isExtended": true
+        },
+        {
+          "title": "Дополнительная информация",
+          "items": [
+            {
+              "name": "Особенности, дополнительно",
+              "value": "160 Кб встроенной памяти",
+              "isExtended": true
+            }
+          ],
+          "isExtended": true
+        },
+        {
+          "title": "Габариты, вес",
+          "items": [
+            {
+              "name": "Ширина",
+              "value": "76 мм",
+              "isExtended": true
+            },
+            {
+              "name": "Высота",
+              "value": "41 мм",
+              "isExtended": true
+            },
+            {
+              "name": "Длина",
+              "value": "121 мм",
+              "isExtended": true
+            },
+            {
+              "name": "Вес",
+              "value": "140 г",
+              "isExtended": true
+            }
+          ],
+          "isExtended": true
+        }
+      ],
+      "images": [
+        {
+          "url": "https://c.dns-shop.ru/thumb/st1/fit/wm/1999/2000/22e79782582644861ef5e46efcd9a2ac/103227d5ff096dfee01c4b444bf5c05beefa9fc2205b4809c20664e149589ec0.jpg",
+          "source": "103227d5ff096dfee01c4b444bf5c05beefa9fc2205b4809c20664e149589ec0.jpg"
+        },
+        {
+          "url": "https://c.dns-shop.ru/thumb/st4/fit/wm/2000/2000/82bad0d6606031528002a266cabffd13/3c932fdadc443978138de3594d8bb585d7a261128ebe0bf5f51764e771562582.jpg",
+          "source": "3c932fdadc443978138de3594d8bb585d7a261128ebe0bf5f51764e771562582.jpg"
+        },
+        {
+          "url": "https://c.dns-shop.ru/thumb/st4/fit/wm/2000/2000/14f9e72c5a38a1e5adb5361ce9d150d2/4fb5f5f626c553ddb63b9bb265183dab3ca3a2835f25380809960da4bd49b02c.jpg",
+          "source": "4fb5f5f626c553ddb63b9bb265183dab3ca3a2835f25380809960da4bd49b02c.jpg"
+        },
+        {
+          "url": "https://c.dns-shop.ru/thumb/st1/fit/wm/2000/2000/803c71885496229a4edf9ee9be0ca685/efab055bc7a8026bba558d1a4b603af411a2bf45561ce55463df634307e37469.jpg",
+          "source": "efab055bc7a8026bba558d1a4b603af411a2bf45561ce55463df634307e37469.jpg"
+        },
+        {
+          "url": "https://c.dns-shop.ru/thumb/st4/fit/wm/2000/2000/776328418998be18e9190302d156719e/334e596c14ac45996cf368745cd2eb191710e483ddfb629006fe9863bd2cb0f8.jpg",
+          "source": "334e596c14ac45996cf368745cd2eb191710e483ddfb629006fe9863bd2cb0f8.jpg"
+        },
+        {
+          "url": "https://c.dns-shop.ru/thumb/st1/fit/wm/2000/2000/1d3249763e3792e86c36445e21ef8b10/6aa0bdff50cf1840ae514f8ae19ba17f1f5d534beb1bcbb1f736bf377422c7af.jpg",
+          "source": "6aa0bdff50cf1840ae514f8ae19ba17f1f5d534beb1bcbb1f736bf377422c7af.jpg"
+        },
+        {
+          "url": "https://c.dns-shop.ru/thumb/st4/fit/wm/2000/2000/87d4b7baf626995b560bda57df12ae1e/736e655b839f69e01ca87d6671c24c1f48cf288ebce440b341b802f3b739b33b.jpg",
+          "source": "736e655b839f69e01ca87d6671c24c1f48cf288ebce440b341b802f3b739b33b.jpg"
+        },
+        {
+          "url": "https://c.dns-shop.ru/thumb/st4/fit/wm/2000/2000/f7a2eb15863f250c9f6637814ce45dd4/620e1f1e24998525b4b3cb6ce5c156e19332459aa4fd07e4a4d22bb129ad1c48.jpg",
+          "source": "620e1f1e24998525b4b3cb6ce5c156e19332459aa4fd07e4a4d22bb129ad1c48.jpg"
+        }
+      ],
+      "price": 40,
+      "rating": 4.7,
+      "discount": 4
+    },
+    {
+      "id": "ip-kamera-orient-ip-235-sh2vz",
+      "title": "IP-камера ORIENT IP-235-SH2VZ",
+      "description": "Оснащенная 2-мегапиксельной матрицей IP-камера ORIENT IP-235-SH2VZ характеризуется разрешением съемки 1920x1080. Высокоэффективная инфракрасная подсветка, дальность действия которой составляет внушительные 30 м, позволяет производить ночную съемку. Вы сможете обеспечить круглосуточное видеоонаблюдение большого помещения, в том числе – зала для командных спортивных игр. IP-камера ORIENT IP-235-SH2VZ использует проводное подключение. Имеется поддержка PoE. Модель рассчитана на работу в помещении, температура в котором находится в пределах от 5 до 50 °C. Пластиковый корпус камеры имеет белый цвет.",
+      "brand": "Orient",
+      "quantity": 94,
+      "subcategory": "professionalnoe-setevoe-oborudovanie",
+      "status": 1,
+      "characteristics": [
+        {
+          "title": "Общие параметры",
+          "items": [
+            {
+              "name": "Тип",
+              "value": "IP-камера",
+              "isExtended": true
+            },
+            {
+              "name": "Модель",
+              "value": "ORIENT IP-235-SH2VZ",
+              "isExtended": true
+            },
+            {
+              "name": "Основной цвет",
+              "value": "белый",
+              "isExtended": true
+            },
+            {
+              "name": "Установка камеры",
+              "value": "в помещении",
+              "isExtended": true
+            }
+          ],
+          "isExtended": true
+        },
+        {
+          "title": "Матрица",
+          "items": [
+            {
+              "name": "Тип матрицы",
+              "value": "CMOS",
+              "isExtended": true
+            },
+            {
+              "name": "Физический размер матрицы",
+              "value": "1/3 дюйма",
+              "isExtended": true
+            },
+            {
+              "name": "Число пикселей матрицы",
+              "value": "2 Мп",
+              "isExtended": true
+            },
+            {
+              "name": "Минимальная степень освещенности",
+              "value": "0.01 Lux",
+              "isExtended": true
+            }
+          ],
+          "isExtended": true
+        },
+        {
+          "title": "Оптика и подсветка",
+          "items": [
+            {
+              "name": "Фокусное расстояние",
+              "value": "от 5.1 мм до 51.0 мм",
+              "isExtended": true
+            },
+            {
+              "name": "Zoom",
+              "value": "x10 (опт.)",
+              "isExtended": true
+            },
+            {
+              "name": "Диафрагма",
+              "value": "f/2.0",
+              "isExtended": true
+            },
+            {
+              "name": "Угол обзора",
+              "value": "32° - 3°",
+              "isExtended": true
+            },
+            {
+              "name": "ИК подсветка",
+              "value": "есть"
+            },
+            {
+              "name": "Дальность ИК подсветки",
+              "value": "30 м",
+              "isExtended": true
+            }
+          ]
+        },
+        {
+          "title": "Изображение",
+          "items": [
+            {
+              "name": "Максимальное разрешение",
+              "value": "1920х1080"
+            },
+            {
+              "name": "Максимальная частота кадров",
+              "value": "25 кадров/с",
+              "isExtended": true
+            },
+            {
+              "name": "Форматы записи видео",
+              "value": "H.265, H.264",
+              "isExtended": true
+            }
+          ]
+        },
+        {
+          "title": "Аудио",
+          "items": [
+            {
+              "name": "Встроенный микрофон",
+              "value": "нет"
+            },
+            {
+              "name": "Встроенный динамик",
+              "value": "нет",
+              "isExtended": true
+            }
+          ]
+        },
+        {
+          "title": "Интерфейсы подключения",
+          "items": [
+            {
+              "name": "Тип подключения",
+              "value": "проводной",
+              "isExtended": true
+            },
+            {
+              "name": "Поддержка PoE",
+              "value": "есть",
+              "isExtended": true
+            },
+            {
+              "name": "Слот для карты памяти",
+              "value": "нет",
+              "isExtended": true
+            }
+          ],
+          "isExtended": true
+        },
+        {
+          "title": "Сеть",
+          "items": [
+            {
+              "name": "Разъем RJ45",
+              "value": "есть"
+            },
+            {
+              "name": "IPv6",
+              "value": "есть",
+              "isExtended": true
+            },
+            {
+              "name": "Поддерживаемые протоколы",
+              "value": "соответствие стандарту ONVIF, TCP/IP",
+              "isExtended": true
+            },
+            {
+              "name": "Стандарт Wi-Fi",
+              "value": "нет"
+            }
+          ]
+        },
+        {
+          "title": "Функции и возможности",
+          "items": [
+            {
+              "name": "Ночная съемка",
+              "value": "есть"
+            },
+            {
+              "name": "Система обнаружения движения",
+              "value": "есть"
+            },
+            {
+              "name": "Облачный сервис",
+              "value": "есть",
+              "isExtended": true
+            }
+          ]
+        },
+        {
+          "title": "Дополнительная информация",
+          "items": [
+            {
+              "name": "Рабочая температура",
+              "value": "от 5° до 50° C",
+              "isExtended": true
+            },
+            {
+              "name": "Рабочая влажность",
+              "value": "до 95%",
+              "isExtended": true
+            },
+            {
+              "name": "Степень защиты",
+              "value": "нет",
+              "isExtended": true
+            },
+            {
+              "name": "Комплектация",
+              "value": "диск с ПО, документация, комплект крепления, блок питания",
+              "isExtended": true
+            }
+          ],
+          "isExtended": true
+        }
+      ],
+      "images": [
+        {
+          "url": "https://c.dns-shop.ru/thumb/st4/fit/wm/2000/2000/b3c50b5168897419b16d1c650b9ac0e5/121b145beb51c7fe79b1de9a7cf4783f27fe229d537d66471d226bc9d8145ff0.jpg",
+          "source": "121b145beb51c7fe79b1de9a7cf4783f27fe229d537d66471d226bc9d8145ff0.jpg"
+        },
+        {
+          "url": "https://c.dns-shop.ru/thumb/st1/fit/wm/1999/2000/9cc51dc335257edf1e5418facaaa429a/0d94a3c5fcdfdb5567daf804b2c8d276a68a58a73e4ac08a8abb4f00f99bbeeb.jpg",
+          "source": "0d94a3c5fcdfdb5567daf804b2c8d276a68a58a73e4ac08a8abb4f00f99bbeeb.jpg"
+        },
+        {
+          "url": "https://c.dns-shop.ru/thumb/st1/fit/wm/2000/2000/a56b56ae4b597da069461c65cc69a1f8/e4228b3a8c266876f460e72edbf3bbdcee9cd29e4634c8bf6a9a10c0fb98ab6c.jpg",
+          "source": "e4228b3a8c266876f460e72edbf3bbdcee9cd29e4634c8bf6a9a10c0fb98ab6c.jpg"
+        },
+        {
+          "url": "https://c.dns-shop.ru/thumb/st1/fit/wm/1999/2000/0e341daf0526d41dda89360c1016e3ea/afe53a232f801ae237e3b15629209b426627f92350dc1c91a70ff790ba7b5d11.jpg",
+          "source": "afe53a232f801ae237e3b15629209b426627f92350dc1c91a70ff790ba7b5d11.jpg"
+        },
+        {
+          "url": "https://c.dns-shop.ru/thumb/st4/fit/wm/2000/2000/26ae814cbeebdc8b6c45172ea365efed/dce9ff88e92944519869aa254bc39284302a23350072073cae13f7af35a00a14.jpg",
+          "source": "dce9ff88e92944519869aa254bc39284302a23350072073cae13f7af35a00a14.jpg"
+        },
+        {
+          "url": "https://c.dns-shop.ru/thumb/st4/fit/wm/2000/2000/4df1f57931cfc5e94370ed6f40d2dced/fcbdaad161cb4ed3f57d1c6f59b6677f4a197f6d8318f7c98ad34b24939e5890.jpg",
+          "source": "fcbdaad161cb4ed3f57d1c6f59b6677f4a197f6d8318f7c98ad34b24939e5890.jpg"
+        }
+      ],
+      "price": 171,
+      "rating": null,
+      "discount": 0
+    },
+    {
+      "id": "kartridz-lazernyj-nv-print-ce278a",
+      "title": "Картридж лазерный NV Print CE278A",
+      "description": "Лазерный картридж NV Print (HP CE278A) представляет собой совместимый блок, использующийся для создания черно-белых документов лазерными принтерами компании HP серии LaserJet Pro: P1560, P1566, P1600, P1606w, P1606dn, M1536 и M1536dnf. Данное изделие оснащено чипом, учитывающим объем израсходованного тонера, а также своевременно оповещающим пользователя о необходимости замены печатающего модуля. NV Print (HP CE278A) имеет большой ресурсный объем, одного такого картриджа достаточно для заполнения текстом 2100 страниц размера А4. Напечатанный при помощи данного модуля текст устойчив к влаге и выцветанию.",
+      "brand": "NV-Print",
+      "quantity": 44,
+      "subcategory": "orgtexnika-i-ofisnoe-oborudovanie",
+      "status": 1,
+      "characteristics": [
+        {
+          "title": "Основные характеристики",
+          "items": [
+            {
+              "name": "Тип",
+              "value": "картридж",
+              "isExtended": true
+            },
+            {
+              "name": "Вид",
+              "value": "лазерный",
+              "isExtended": true
+            },
+            {
+              "name": "Модель",
+              "value": "NV Print CE278A"
+            },
+            {
+              "name": "Код производителя",
+              "value": "NV-CE278A",
+              "isExtended": true
+            },
+            {
+              "name": "Цвет печати",
+              "value": "черный"
+            },
+            {
+              "name": "Совместимость",
+              "value": "совместимый"
+            },
+            {
+              "name": "Количество в упаковке",
+              "value": "1 шт"
+            },
+            {
+              "name": "Ресурс",
+              "value": "2100 страниц"
+            },
+            {
+              "name": "Дополнительная информация",
+              "value": "с чипом",
+              "isExtended": true
+            }
+          ]
+        },
+        {
+          "title": "Совместимость",
+          "items": [
+            {
+              "name": "Бренд поддерживаемых принтеров",
+              "value": "HP"
+            },
+            {
+              "name": "Поддерживаемые модели принтеров",
+              "value": "HP LaserJet Pro P1607dn, HP LaserJet Pro M1538dnf, HP LaserJet Pro M1536dnf, HP LaserJet Pro M1530, HP LaserJet Pro M1539dnf, HP LaserJet Pro M1537dnf, HP LaserJet Pro P1609dn, HP LaserJet Pro P1608dn, HP LaserJet Pro P1569, HP LaserJet Pro P1568, HP LaserJet Pro P1567, HP LaserJet Pro P1606dn, HP LaserJet Pro P1566",
+              "isExtended": true
+            }
+          ]
+        }
+      ],
+      "images": [
+        {
+          "url": "https://c.dns-shop.ru/thumb/st1/fit/wm/1809/1392/f2fe5db994f8fc935aa9f1b030991397/7fd0041eeb714a753b22e690a8a656a1a0d4ebf12f644edac0fd47cc02813906.jpg",
+          "source": "7fd0041eeb714a753b22e690a8a656a1a0d4ebf12f644edac0fd47cc02813906.jpg"
+        }
+      ],
+      "price": 12,
+      "rating": 4.6,
+      "discount": 0
+    }
+  ]
+}
