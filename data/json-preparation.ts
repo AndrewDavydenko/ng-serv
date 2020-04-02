@@ -16,7 +16,7 @@ import {
 } from './json-interfaces';
 
 const fileName = 'original-data.json';
-// const fileName = 'db.json';
+ // const fileName = 'db.json';
 
 // eslint-disable-next-line @typescript-eslint/no-use-before-define
 main();
@@ -25,7 +25,6 @@ async function main() {
   try {
     const asyncFileReader = util.promisify(fs.readFile);
     const asyncFileWriter = util.promisify(fs.writeFile);
-
     const buffer: Buffer = await asyncFileReader(`${__dirname}/${fileName}`);
     const json: IJsonData = JSON.parse(buffer.toString()) as IJsonData;
     let subCategories: ISubCategory[] = [];
