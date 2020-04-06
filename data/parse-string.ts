@@ -1,45 +1,96 @@
+/* eslint-disable @typescript-eslint/no-use-before-define */
+import * as fs from 'fs';
+import * as util from 'util';
+import * as path from 'path';
 import * as mongoose from 'mongoose';
-// const mongoose = require('mongoose');
-const MongoClient = require('mongodb').MongoClient;
-const url =
-'mongodb://127.0.0.1:27017';
-const products = require('./output/json-products.json');
-const categories = require('./output/json-categories.json');
-const subcategories = require('./output/json-sub-categories.json');
+import * as mongodb from 'mongodb';
+import ora = require('ora');
+const promisifedFileRead = util.promisify(fs.readFile);
+const promisifiedReadDir = util.promisify(fs.readdir);
+const url = 'mongodb://JSDaddy:jsdaddy2018@ds229909.mlab.com:29909/heroku_4k4jx5rj';
 
-MongoClient.connect(
-  url,
-  { useNewUrlParser: true },
-  // tslint:disable-next-line:no-any
-  async (_err: any, db: any) => {
-    const dbo = db.db('heroku_smfd2t77');
-    // tslint:disable-next-line:no-any
-    products.map((elem: any) => {
-      elem._id = mongoose.Types.ObjectId(elem._id);
-      elem.subCategory = mongoose.Types.ObjectId(elem.subCategory);
-      // tslint:disable-next-line:no-any
-      dbo.collection('products').insertOne(elem);
-    });
-    // tslint:disable-next-line:no-any
-    categories.map((elem: any) => {
-      elem._id = mongoose.Types.ObjectId(elem._id);
-      dbo.collection('categories').insertOne(elem);
-    });
-    // tslint:disable-next-line:no-any
-    subcategories.map((elem: any) => {
-      elem._id = mongoose.Types.ObjectId(elem._id);
-      elem.category = mongoose.Types.ObjectId(elem.category);
-      dbo.collection('subcategories').insertOne(elem);
-    });
-    const anotherCat = await dbo
-      .collection('categories')
-      .insertOne({ name: 'Прочее' });
-    await dbo.collection('subcategories').insertOne({
-      category: mongoose.Types.ObjectId(anotherCat._id),
-      name: 'Без категории',
-    });
-    // tslint:disable-next-line:no-console
-    console.log('done');
-    db.close();
+const main = async() =>{
+  const spinner = ora('Loading').start();  
+  try{
+    spinner.text = 'Connect to db';
+      const connection = await mongodb.MongoClient.connect(url,  { useNewUrlParser: true });
+      const dbo = connection.db('heroku_4k4jx5rj');
+
+      const categories = await readJson('json-categories.json');
+      await loadCategories(dbo, categories, spinner);
+
+      const subCategories = await readJson('json-sub-categories.json');        
+      await loadSubCategories(dbo, subCategories, spinner);   
+
+      const productsFileNames = await promisifiedReadDir(
+        path.resolve(__dirname, 'output'),
+      );
+      await loadProducts(dbo, productsFileNames, spinner);
+  } catch(error){
+    console.log(error);
+  } finally {
+    spinner.stop();
   }
-);
+
+};
+main();
+
+async function loadCategories(dbo, categories, spinner) {
+  spinner.text = 'Loading categories';
+  try{
+    for (const category of categories) {
+      category._id = mongoose.Types.ObjectId(category._id);
+      await dbo.collection('categories').insertOne(category);
+    }
+  }
+  catch(e){
+    spinner.stop();
+    console.log(e);
+  }
+  spinner.stop();
+  console.log('\n Categories added');
+};
+
+async function loadSubCategories(dbo, subCategories, spinner) {
+  spinner.start();
+  spinner.text = 'Loading subCategories';
+  try{
+    for (const subCategory of subCategories) {
+      subCategory._id = mongoose.Types.ObjectId(subCategory._id);
+      await dbo.collection('subCategories').insertOne(subCategory);
+    }
+  } catch(e){
+    spinner.stop();
+    console.log(e);
+  }
+  spinner.stop();
+  console.log('\n SubCategories added');
+};
+async function loadProducts (dbo, productsFileNames, spinner) {
+  spinner.start(); 
+  spinner.text = 'Loading products'; 
+   try{
+    for (let i = 0; i < productsFileNames.length; i++) {
+        const products = await readJson(`output/${productsFileNames[i]}`);
+        for (const product of products) {
+          product._id = mongoose.Types.ObjectId(product._id);
+          product.subCategory = mongoose.Types.ObjectId(product.subCategory);
+          await dbo.collection('products').insertOne(product);
+          
+        }
+    }
+  } catch(e){
+    spinner.stop();
+    console.log(e);
+  }
+  spinner.stop();
+  console.log('\n Products added');
+};
+
+async function readJson(fileName: string){
+  const buffer: Buffer = await promisifedFileRead(
+    path.resolve(__dirname, fileName)
+  );
+return JSON.parse(buffer.toString())
+};
+
